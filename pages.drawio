@@ -20,180 +20,127 @@
           <mxGeometry x="380" y="110" width="40" height="40" as="geometry" />
         </mxCell>
         
-        <!-- Стрелка вниз от главного экрана -->
-        <mxCell id="5" value="" style="endArrow=classic;startArrow=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="3" target="6">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="440" y="180" as="sourcePoint" />
-            <mxPoint x="390" y="230" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        
         <!-- Уровень 1: Экран произведения -->
-        <mxCell id="6" value="&lt;b&gt;Экран произведения&lt;/b&gt;&lt;br&gt;Информация + навигация" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+        <mxCell id="5" value="&lt;b&gt;Экран произведения&lt;/b&gt;&lt;br&gt;Информация + навигация" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="340" y="220" width="200" height="80" as="geometry" />
         </mxCell>
         
         <!-- Иконка произведения -->
-        <mxCell id="7" value="📖" style="text;html=1;fontSize=24;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="6" value="📖" style="text;html=1;fontSize=24;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="370" y="230" width="40" height="40" as="geometry" />
         </mxCell>
         
         <!-- Уровень 1: Экран импорта -->
-        <mxCell id="8" value="&lt;b&gt;Экран импорта книги&lt;/b&gt;&lt;br&gt;Добавление новых произведений" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+        <mxCell id="7" value="&lt;b&gt;Экран импорта книги&lt;/b&gt;&lt;br&gt;Добавление новых произведений" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
           <mxGeometry x="350" y="400" width="180" height="80" as="geometry" />
         </mxCell>
         
         <!-- Иконка импорта -->
-        <mxCell id="9" value="📥" style="text;html=1;fontSize=24;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="8" value="📥" style="text;html=1;fontSize=24;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="380" y="410" width="40" height="40" as="geometry" />
         </mxCell>
         
-        <!-- Стрелка от главного экрана к импорту -->
-        <mxCell id="10" style="endArrow=classic;startArrow=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="3" target="8">
-          <mxGeometry width="50" height="50" relative="1" as="geometry" />
-        </mxCell>
-        
-        <!-- Стрелка вниз от экрана произведения -->
-        <mxCell id="11" style="endArrow=classic;startArrow=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="6" target="12">
-          <mxGeometry width="50" height="50" relative="1" as="geometry" />
-        </mxCell>
-        
         <!-- Уровень 2: Экран чтения -->
-        <mxCell id="12" value="&lt;b&gt;Экран чтения&lt;/b&gt;&lt;br&gt;Текст главы + управление" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+        <mxCell id="9" value="&lt;b&gt;Экран чтения&lt;/b&gt;&lt;br&gt;Текст главы + управление" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
           <mxGeometry x="160" y="340" width="180" height="80" as="geometry" />
         </mxCell>
         
         <!-- Иконка чтения -->
-        <mxCell id="13" value="📄" style="text;html=1;fontSize=24;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="10" value="📄" style="text;html=1;fontSize=24;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="190" y="350" width="40" height="40" as="geometry" />
         </mxCell>
         
         <!-- Уровень 2: Список глав -->
-        <mxCell id="14" value="&lt;b&gt;Список глав&lt;/b&gt;&lt;br&gt;Навигация по произведению" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+        <mxCell id="11" value="&lt;b&gt;Список глав&lt;/b&gt;&lt;br&gt;Навигация по произведению" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
           <mxGeometry x="540" y="340" width="180" height="80" as="geometry" />
         </mxCell>
         
         <!-- Иконка списка глав -->
-        <mxCell id="15" value="📑" style="text;html=1;fontSize=24;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="12" value="📑" style="text;html=1;fontSize=24;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="570" y="350" width="40" height="40" as="geometry" />
         </mxCell>
         
-        <!-- Стрелка от экрана произведения к списку глав -->
-        <mxCell id="16" style="endArrow=classic;startArrow=none;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="6" target="14">
-          <mxGeometry width="50" height="50" relative="1" as="geometry" />
-        </mxCell>
-        
-        <!-- Стрелка вниз от экрана чтения -->
-        <mxCell id="17" style="endArrow=classic;startArrow=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="12" target="18">
-          <mxGeometry width="50" height="50" relative="1" as="geometry" />
-        </mxCell>
-        
         <!-- Уровень 3: Настройки чтения -->
-        <mxCell id="18" value="&lt;b&gt;Настройки чтения&lt;/b&gt;&lt;br&gt;Персонализация отображения" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;" vertex="1" parent="1">
+        <mxCell id="13" value="&lt;b&gt;Настройки чтения&lt;/b&gt;&lt;br&gt;Персонализация отображения" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;" vertex="1" parent="1">
           <mxGeometry x="140" y="460" width="220" height="80" as="geometry" />
         </mxCell>
         
         <!-- Иконка настроек -->
-        <mxCell id="19" value="⚙️" style="text;html=1;fontSize=24;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="14" value="⚙️" style="text;html=1;fontSize=24;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="180" y="470" width="40" height="40" as="geometry" />
         </mxCell>
         
-        <!-- Связи иерархии -->
-        
-        <!-- Главный экран → Экран произведения -->
-        <mxCell id="20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="3" target="6">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        
-        <!-- Главный экран → Экран импорта -->
-        <mxCell id="21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="3" target="8">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        
-        <!-- Экран произведения → Экран чтения -->
-        <mxCell id="22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="6" target="12">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="340" y="260" />
-              <mxPoint x="240" y="260" />
-              <mxPoint x="240" y="380" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        
-        <!-- Экран произведения → Список глав -->
-        <mxCell id="23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="6" target="14">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="540" y="260" />
-              <mxPoint x="630" y="260" />
-              <mxPoint x="630" y="380" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        
-        <!-- Экран чтения → Настройки чтения -->
-        <mxCell id="24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="12" target="18">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        
         <!-- Фон иерархии -->
-        <mxCell id="25" value="" style="rounded=0;whiteSpace=wrap;html=1;fillOpacity=20;strokeColor=#cccccc;strokeWidth=2;dashed=1;dashPattern=1 3;" vertex="1" parent="1">
+        <mxCell id="15" value="" style="rounded=0;whiteSpace=wrap;html=1;fillOpacity=20;strokeColor=#cccccc;strokeWidth=2;dashed=1;dashPattern=1 3;" vertex="1" parent="1">
           <mxGeometry x="120" y="80" width="600" height="480" as="geometry" />
         </mxCell>
         
         <!-- Легенда уровней -->
-        <mxCell id="26" value="&lt;b&gt;Уровни иерархии:&lt;/b&gt;&lt;br&gt;1. Корневой экран&lt;br&gt;2. Основные экраны&lt;br&gt;3. Вспомогательные экраны&lt;br&gt;4. Модальные/всплывающие" style="note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffffff;strokeColor=#666666;" vertex="1" parent="1">
+        <mxCell id="16" value="&lt;b&gt;Уровни иерархии:&lt;/b&gt;&lt;br&gt;1. Корневой экран&lt;br&gt;2. Основные экраны&lt;br&gt;3. Вспомогательные экраны&lt;br&gt;4. Модальные/всплывающие" style="note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffffff;strokeColor=#666666;" vertex="1" parent="1">
           <mxGeometry x="50" y="100" width="180" height="120" as="geometry" />
         </mxCell>
         
         <!-- Подписи связей -->
-        <mxCell id="27" value="Навигация" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+        <mxCell id="17" value="Навигация" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
           <mxGeometry x="420" y="180" width="60" height="20" as="geometry" />
         </mxCell>
         
-        <mxCell id="28" value="Добавление" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+        <mxCell id="18" value="Добавление" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
           <mxGeometry x="420" y="340" width="60" height="20" as="geometry" />
         </mxCell>
         
-        <mxCell id="29" value="Чтение" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+        <mxCell id="19" value="Чтение" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
           <mxGeometry x="300" y="300" width="60" height="20" as="geometry" />
         </mxCell>
         
-        <mxCell id="30" value="Навигация" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+        <mxCell id="20" value="Навигация" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
           <mxGeometry x="580" y="300" width="60" height="20" as="geometry" />
         </mxCell>
         
-        <mxCell id="31" value="Персонализация" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+        <mxCell id="21" value="Персонализация" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
           <mxGeometry x="200" y="420" width="80" height="20" as="geometry" />
         </mxCell>
         
-        <!-- Дополнительные связи -->
+        <!-- СВЯЗИ МЕЖДУ ЭЛЕМЕНТАМИ -->
         
-        <!-- Двунаправленная связь между чтением и списком глав -->
-        <mxCell id="32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=classic;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="12" target="14">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="340" y="380" />
-              <mxPoint x="340" y="460" />
-              <mxPoint x="540" y="460" />
-            </Array>
-          </mxGeometry>
+        <!-- Главный экран → Экран произведения -->
+        <mxCell id="22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="3" target="5">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         
-        <!-- Подпись к двунаправленной связи -->
-        <mxCell id="33" value="Быстрый переход" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="420" y="440" width="80" height="20" as="geometry" />
+        <!-- Главный экран → Экран импорта -->
+        <mxCell id="23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="3" target="7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Экран произведения → Экран чтения -->
+        <mxCell id="24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="5" target="9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Экран произведения → Список глав -->
+        <mxCell id="25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="5" target="11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Экран чтения → Настройки чтения -->
+        <mxCell id="26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="9" target="13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Двунаправленная связь между чтением и списком глав -->
+        <mxCell id="27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=classic;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="9" target="11">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         
         <!-- Возможность из настроек вернуться к чтению -->
-        <mxCell id="34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=none;dashed=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="18" target="12">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="360" y="500" />
-              <mxPoint x="360" y="380" />
-            </Array>
-          </mxGeometry>
+        <mxCell id="28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;startArrow=none;dashed=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="13" target="9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Подпись к двунаправленной связи -->
+        <mxCell id="29" value="Быстрый переход" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="420" y="380" width="80" height="20" as="geometry" />
         </mxCell>
         
       </root>
