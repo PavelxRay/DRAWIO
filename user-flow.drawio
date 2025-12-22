@@ -1,0 +1,320 @@
+<mxfile host="app.diagrams.net" modified="2024-12-22T11:30:00.000Z" agent="Mozilla/5.0" etag="P8gY7L8v6M5Kx3hT9zGp" version="21.7.5" type="device">
+  <diagram name="Yume Reader - User Flow Diagram" id="C5RBs43oDa-KdzZeNtuy">
+    <mxGraphModel dx="1642" dy="852" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Заголовок -->
+        <mxCell id="title" value="Yume Reader - User Flow Diagram" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#4F46E5;" vertex="1" parent="1">
+          <mxGeometry x="300" y="20" width="400" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Стартовый экран -->
+        <mxCell id="start" value="🚀 Запуск приложения" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#4F46E5;strokeWidth=2;fillColor=#EEF2FF;" vertex="1" parent="1">
+          <mxGeometry x="400" y="80" width="120" height="120" as="geometry" />
+        </mxCell>
+        
+        <!-- Splash Screen -->
+        <mxCell id="splash" value="🌙 Сплешскрин\n• Логотип\n• Загрузка данных" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#8B5CF6;strokeWidth=2;fillColor=#F5F3FF;" vertex="1" parent="1">
+          <mxGeometry x="400" y="230" width="120" height="100" as="geometry" />
+        </mxCell>
+        
+        <!-- Main Flow -->
+        <mxCell id="main_flow" value="📱 Главный экран" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;strokeColor=#4F46E5;fontColor=#4F46E5;fillColor=#F8FAFC;" vertex="1" parent="1">
+          <mxGeometry x="50" y="380" width="800" height="200" as="geometry" />
+        </mxCell>
+        
+        <!-- Tab Navigation -->
+        <mxCell id="tab_nav" value="Нижняя панель навигации" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingTop=0;spacingLeft=4;spacingRight=4;rotatable=0;labelBackgroundColor=none;fontSize=14;fontStyle=1;" vertex="1" parent="main_flow">
+          <mxGeometry y="30" width="800" height="20" as="geometry" />
+        </mxCell>
+        
+        <!-- Tabs -->
+        <mxCell id="library_tab" value="📚 Библиотека" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#3B82F6;fillColor=#DBEAFE;" vertex="1" parent="main_flow">
+          <mxGeometry x="100" y="50" width="120" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="reading_tab" value="▶️ Читаю сейчас" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#10B981;fillColor=#D1FAE5;" vertex="1" parent="main_flow">
+          <mxGeometry x="240" y="50" width="120" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="favorites_tab" value="⭐ Избранное" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#F59E0B;fillColor=#FEF3C7;" vertex="1" parent="main_flow">
+          <mxGeometry x="380" y="50" width="120" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="settings_tab" value="⚙️ Настройки" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#8B5CF6;fillColor=#EDE9FE;" vertex="1" parent="main_flow">
+          <mxGeometry x="520" y="50" width="120" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- FAB -->
+        <mxCell id="fab" value="➕ Добавить книгу" style="shape=ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#4F46E5;fillColor=#4F46E5;fontColor=#FFFFFF;" vertex="1" parent="main_flow">
+          <mxGeometry x="650" y="100" width="50" height="50" as="geometry" />
+        </mxCell>
+        
+        <!-- Book List -->
+        <mxCell id="book_list" value="Список книг\n• Карточки книг\n• Поиск\n• Фильтры" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#6B7280;fillColor=#F9FAFB;" vertex="1" parent="main_flow">
+          <mxGeometry x="100" y="110" width="200" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Book Details Flow -->
+        <mxCell id="book_details_section" value="📖 Детали книги" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;strokeColor=#3B82F6;fontColor=#3B82F6;fillColor=#EFF6FF;" vertex="1" parent="1">
+          <mxGeometry x="50" y="600" width="800" height="250" as="geometry" />
+        </mxCell>
+        
+        <!-- Book Details Elements -->
+        <mxCell id="book_cover" value="🖼️ Обложка\nи описание" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#3B82F6;fillColor=#FFFFFF;" vertex="1" parent="book_details_section">
+          <mxGeometry x="50" y="30" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="progress_bar" value="📊 Прогресс чтения" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#3B82F6;fillColor=#FFFFFF;" vertex="1" parent="book_details_section">
+          <mxGeometry x="200" y="30" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="chapters_list" value="📑 Список глав" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#3B82F6;fillColor=#FFFFFF;" vertex="1" parent="book_details_section">
+          <mxGeometry x="350" y="30" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="book_actions" value="🎯 Действия\n• Читать\n• Избранное\n• Удалить" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#3B82F6;fillColor=#FFFFFF;" vertex="1" parent="book_details_section">
+          <mxGeometry x="500" y="30" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Reading Screen Flow -->
+        <mxCell id="reading_screen_section" value="📖 Экран чтения" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;strokeColor=#10B981;fontColor=#10B981;fillColor=#ECFDF5;" vertex="1" parent="1">
+          <mxGeometry x="50" y="880" width="800" height="200" as="geometry" />
+        </mxCell>
+        
+        <!-- Reading Screen Elements -->
+        <mxCell id="text_content" value="📄 Текст главы\n• Настраиваемый\n• С изображениями" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#10B981;fillColor=#FFFFFF;" vertex="1" parent="reading_screen_section">
+          <mxGeometry x="100" y="30" width="150" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="reading_settings" value="🎨 Настройки\n• Шрифт\n• Цвет\n• Интервал" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#10B981;fillColor=#FFFFFF;" vertex="1" parent="reading_screen_section">
+          <mxGeometry x="300" y="30" width="150" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="chapter_nav" value="🔀 Навигация\n• Следующая\n• Предыдущая\n• Оглавление" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#10B981;fillColor=#FFFFFF;" vertex="1" parent="reading_screen_section">
+          <mxGeometry x="500" y="30" width="150" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Import Flow -->
+        <mxCell id="import_section" value="📥 Импорт EPUB" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;strokeColor=#F59E0B;fontColor=#F59E0B;fillColor=#FFFBEB;" vertex="1" parent="1">
+          <mxGeometry x="50" y="1110" width="800" height="180" as="geometry" />
+        </mxCell>
+        
+        <!-- Import Steps -->
+        <mxCell id="file_select" value="📁 Выбор файла\n• Проводник\n• Разрешения" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#F59E0B;fillColor=#FFFFFF;" vertex="1" parent="import_section">
+          <mxGeometry x="100" y="30" width="150" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="preview" value="👁️ Предпросмотр\n• Обложка\n• Метаданные" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#F59E0B;fillColor=#FFFFFF;" vertex="1" parent="import_section">
+          <mxGeometry x="300" y="30" width="150" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="import_action" value="✅ Импорт\n• Парсинг\n• Сохранение" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#F59E0B;fillColor=#FFFFFF;" vertex="1" parent="import_section">
+          <mxGeometry x="500" y="30" width="150" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Settings Flow -->
+        <mxCell id="settings_section" value="⚙️ Настройки приложения" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;strokeColor=#8B5CF6;fontColor=#8B5CF6;fillColor=#F5F3FF;" vertex="1" parent="1">
+          <mxGeometry x="900" y="380" width="400" height="200" as="geometry" />
+        </mxCell>
+        
+        <!-- Settings Options -->
+        <mxCell id="theme_settings" value="🎨 Тема\n• Светлая\n• Темная\n• Системная" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#8B5CF6;fillColor=#FFFFFF;" vertex="1" parent="settings_section">
+          <mxGeometry x="50" y="30" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="global_settings" value="⚡ Глобальные\nнастройки чтения" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#8B5CF6;fillColor=#FFFFFF;" vertex="1" parent="settings_section">
+          <mxGeometry x="200" y="30" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="about" value="ℹ️ О приложении\n• Версия\n• Помощь" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#8B5CF6;fillColor=#FFFFFF;" vertex="1" parent="settings_section">
+          <mxGeometry x="50" y="110" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Стрелки переходов -->
+        
+        <!-- Старт → Сплешскрин -->
+        <mxCell id="arrow1" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#4F46E5;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="460" y="200" as="sourcePoint" />
+            <mxPoint x="460" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Сплешскрин → Главный экран -->
+        <mxCell id="arrow2" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#4F46E5;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="460" y="330" as="sourcePoint" />
+            <mxPoint x="460" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Главный экран → Детали книги -->
+        <mxCell id="arrow3" value="Нажатие на книгу" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#3B82F6;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="200" y="580" as="sourcePoint" />
+            <mxPoint x="200" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Детали книги → Экран чтения -->
+        <mxCell id="arrow4" value="Нажатие 'Читать'" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#10B981;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="560" y="850" as="sourcePoint" />
+            <mxPoint x="560" y="880" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Главный экран → Импорт -->
+        <mxCell id="arrow5" value="Нажатие FAB" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#F59E0B;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="675" y="580" as="sourcePoint" />
+            <mxPoint x="675" y="1110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Главный экран → Настройки -->
+        <mxCell id="arrow6" value="Переход по вкладке" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#8B5CF6;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="580" y="580" as="sourcePoint" />
+            <mxPoint x="1100" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Импорт → Главный экран -->
+        <mxCell id="arrow7" value="Успешный импорт" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#10B981;dashed=1;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="575" y="1290" as="sourcePoint" />
+            <mxPoint x="575" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Настройки чтения → Экран чтения -->
+        <mxCell id="arrow8" value="Из настроек чтения" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#10B981;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="200" y="580" as="sourcePoint" />
+            <mxPoint x="200" y="880" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Обратные стрелки (Назад) -->
+        
+        <!-- Детали книги → Главный экран -->
+        <mxCell id="arrow9" value="Назад" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#6B7280;dashed=1;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="100" y="850" as="sourcePoint" />
+            <mxPoint x="100" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Экран чтения → Главный/Детали -->
+        <mxCell id="arrow10" value="Назад" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#6B7280;dashed=1;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="100" y="1080" as="sourcePoint" />
+            <mxPoint x="100" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Импорт → Главный экран (Отмена) -->
+        <mxCell id="arrow11" value="Отмена" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#6B7280;dashed=1;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="100" y="1290" as="sourcePoint" />
+            <mxPoint x="100" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Настройки → Главный экран -->
+        <mxCell id="arrow12" value="Назад" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#6B7280;dashed=1;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1100" y="580" as="sourcePoint" />
+            <mxPoint x="850" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Легенда -->
+        <mxCell id="legend" value="Легенда" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;strokeColor=#6B7280;fontColor=#6B7280;fillColor=#F9FAFB;" vertex="1" parent="1">
+          <mxGeometry x="900" y="80" width="250" height="250" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend_title" value="Обозначения" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingTop=0;spacingLeft=4;spacingRight=4;rotatable=0;labelBackgroundColor=none;fontSize=14;fontStyle=1" vertex="1" parent="legend">
+          <mxGeometry y="26" width="250" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend1" value="🎯" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#4F46E5;fillColor=#EEF2FF;" vertex="1" parent="legend">
+          <mxGeometry x="30" y="60" width="30" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend1_text" value="Начальная/конечная точка" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=5;fontSize=12;" vertex="1" parent="legend">
+          <mxGeometry x="70" y="60" width="150" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend2" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#3B82F6;fillColor=#EFF6FF;" vertex="1" parent="legend">
+          <mxGeometry x="30" y="100" width="30" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend2_text" value="Экран/Состояние" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=5;fontSize=12;" vertex="1" parent="legend">
+          <mxGeometry x="70" y="100" width="150" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend3" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#4F46E5;" edge="1" parent="legend">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="30" y="150" as="sourcePoint" />
+            <mxPoint x="60" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="legend3_text" value="Основной переход" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=5;fontSize=12;" vertex="1" parent="legend">
+          <mxGeometry x="70" y="140" width="150" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend4" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#6B7280;dashed=1;" edge="1" parent="legend">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="30" y="180" as="sourcePoint" />
+            <mxPoint x="60" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="legend4_text" value="Назад/Отмена" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=5;fontSize=12;" vertex="1" parent="legend">
+          <mxGeometry x="70" y="170" width="150" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Ключевые сценарии -->
+        <mxCell id="scenarios" value="Ключевые сценарии" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;strokeColor=#059669;fontColor=#059669;fillColor=#D1FAE5;" vertex="1" parent="1">
+          <mxGeometry x="900" y="600" width="400" height="300" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="scenarios_title" value="📋 Основные пути пользователя" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingTop=0;spacingLeft=4;spacingRight=4;rotatable=0;labelBackgroundColor=none;fontSize=14;fontStyle=1" vertex="1" parent="scenarios">
+          <mxGeometry y="26" width="400" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="scenario1" value="1. Чтение новой книги\n   Запуск → Библиотека → Импорт → Чтение" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=5;rotatable=0;labelBackgroundColor=none;fontSize=12;" vertex="1" parent="scenarios">
+          <mxGeometry y="50" width="380" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="scenario2" value="2. Продолжение чтения\n   Запуск → Библиотека → Книга → Чтение" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=5;rotatable=0;labelBackgroundColor=none;fontSize=12;" vertex="1" parent="scenarios">
+          <mxGeometry y="90" width="380" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="scenario3" value="3. Управление библиотекой\n   Запуск → Библиотека → Поиск → Фильтрация" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=5;rotatable=0;labelBackgroundColor=none;fontSize=12;" vertex="1" parent="scenarios">
+          <mxGeometry y="130" width="380" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="scenario4" value="4. Настройка чтения\n   Чтение → Настройки → Изменение → Сохранение" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=5;rotatable=0;labelBackgroundColor=none;fontSize=12;" vertex="1" parent="scenarios">
+          <mxGeometry y="170" width="380" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="scenario5" value="5. Смена темы\n   Запуск → Настройки → Тема → Применить" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=5;rotatable=0;labelBackgroundColor=none;fontSize=12;" vertex="1" parent="scenarios">
+          <mxGeometry y="210" width="380" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Подвал -->
+        <mxCell id="footer" value="Yume Reader - Диаграмма пользовательских переходов © 2024" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#6B7280;" vertex="1" parent="1">
+          <mxGeometry x="400" y="1350" width="400" height="20" as="geometry" />
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
