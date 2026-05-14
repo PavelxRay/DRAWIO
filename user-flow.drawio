@@ -1,163 +1,89 @@
-<mxfile host="app.diagrams.net" modified="2024-12-22T12:00:00.000Z" agent="Mozilla/5.0" etag="X8gY7L8v6M5Kx3hT9zGp" version="21.7.5" type="device">
-  <diagram name="Yume Reader - User Flow" id="C5RBs43oDa-KdzZeNtuy">
-    <mxGraphModel dx="1642" dy="852" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+<mxfile host="app.diagrams.net">
+  <diagram id="computing-history" name="Средства обработки информации">
+    <mxGraphModel dx="1422" dy="1342" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1600" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         
-        <!-- Заголовок -->
-        <mxCell id="title" value="Yume Reader - User Flow" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#4F46E5;" vertex="1" parent="1">
-          <mxGeometry x="300" y="20" width="400" height="40" as="geometry" />
+        <!-- БЛОК 1: СРЕДСТВА ОБРАБОТКИ -->
+        <mxCell id="m_root" value="Средства обработки информации" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#111827;fontColor=#ffffff;strokeColor=none;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="460" y="40" width="280" height="50" as="geometry" />
         </mxCell>
         
-        <!-- Основные экраны -->
-        <mxCell id="start" value="Запуск" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#4F46E5;strokeWidth=2;fillColor=#EEF2FF;" vertex="1" parent="1">
-          <mxGeometry x="400" y="100" width="120" height="60" as="geometry" />
+        <mxCell id="c_micro" value="Микрокомпьютеры&lt;br&gt;&lt;br&gt;• Наличие микропроцессора&lt;br&gt;• Универсальное применение&lt;br&gt;• Включают в себя класс ПК" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1e3a8a;fontColor=#ffffff;align=left;spacingLeft=10;verticalAlign=top;spacingTop=10;" vertex="1" parent="1">
+          <mxGeometry x="160" y="130" width="240" height="100" as="geometry" />
         </mxCell>
         
-        <mxCell id="splash" value="Сплешскрин" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#8B5CF6;strokeWidth=2;fillColor=#F5F3FF;" vertex="1" parent="1">
-          <mxGeometry x="400" y="200" width="120" height="60" as="geometry" />
+        <mxCell id="c_main" value="Мэйнфреймы&lt;br&gt;&lt;br&gt;• Научно-технические задачи&lt;br&gt;• Организация от 200 рабочих мест&lt;br&gt;• Совместная работа под одной ОС" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#b45309;fontColor=#ffffff;align=left;spacingLeft=10;verticalAlign=top;spacingTop=10;" vertex="1" parent="1">
+          <mxGeometry x="480" y="130" width="240" height="100" as="geometry" />
         </mxCell>
         
-        <mxCell id="main" value="Главный экран\n(Библиотека)" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#3B82F6;strokeWidth=2;fillColor=#DBEAFE;" vertex="1" parent="1">
-          <mxGeometry x="400" y="300" width="120" height="80" as="geometry" />
+        <mxCell id="c_super" value="Суперкомпьютеры&lt;br&gt;&lt;br&gt;• Скорость выше 100 МФЛОПС&lt;br&gt;• Высокопараллельная структура&lt;br&gt;• Задачи обороны и большой науки" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#991b1b;fontColor=#ffffff;align=left;spacingLeft=10;verticalAlign=top;spacingTop=10;" vertex="1" parent="1">
+          <mxGeometry x="800" y="130" width="240" height="100" as="geometry" />
         </mxCell>
         
-        <mxCell id="details" value="Детали книги" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#10B981;strokeWidth=2;fillColor=#D1FAE5;" vertex="1" parent="1">
-          <mxGeometry x="400" y="420" width="120" height="80" as="geometry" />
+        <!-- БЛОК 2: КЛАССИФИКАЦИЯ ПК -->
+        <mxCell id="pc_root" value="Персональные компьютеры (ПК)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#5b21b6;fontColor=#ffffff;strokeColor=none;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="460" y="280" width="280" height="50" as="geometry" />
         </mxCell>
         
-        <mxCell id="reading" value="Экран чтения" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#F59E0B;strokeWidth=2;fillColor=#FEF3C7;" vertex="1" parent="1">
-          <mxGeometry x="400" y="540" width="120" height="80" as="geometry" />
+        <mxCell id="pc_static" value="Стационарные (настольные)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1e40af;fontColor=#ffffff;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="370" width="260" height="40" as="geometry" />
         </mxCell>
         
-        <mxCell id="import" value="Импорт EPUB" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#8B5CF6;strokeWidth=2;fillColor=#EDE9FE;" vertex="1" parent="1">
-          <mxGeometry x="200" y="420" width="120" height="60" as="geometry" />
+        <mxCell id="st_base" value="Базовые настольные ПК&lt;br&gt;• Desktop — универсальные машины&lt;br&gt;• Применение: дом, стационарный офис" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8fafc;fontColor=#0f172a;align=left;spacingLeft=8;strokeColor=#cbd5e1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="430" width="260" height="60" as="geometry" />
         </mxCell>
         
-        <mxCell id="settings" value="Настройки" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#6366F1;strokeWidth=2;fillColor=#E0E7FF;" vertex="1" parent="1">
-          <mxGeometry x="600" y="420" width="120" height="60" as="geometry" />
+        <mxCell id="st_spec" value="Специализированные ПК&lt;br&gt;• Высокопроизводительные рабочие станции&lt;br&gt;• Серверы и суперкомпьютерные системы" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8fafc;fontColor=#0f172a;align=left;spacingLeft=8;strokeColor=#cbd5e1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="510" width="260" height="60" as="geometry" />
         </mxCell>
         
-        <!-- Переходы -->
-        <mxCell id="arrow1" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#4F46E5;" edge="1" parent="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="460" y="160" as="sourcePoint" />
-            <mxPoint x="460" y="200" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="pc_mobile" value="Мобильные (переносные)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#065f46;fontColor=#ffffff;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="370" width="260" height="40" as="geometry" />
         </mxCell>
         
-        <mxCell id="arrow2" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#4F46E5;" edge="1" parent="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="460" y="260" as="sourcePoint" />
-            <mxPoint x="460" y="300" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="mob_lap" value="Ноутбуки / Laptops / Notebooks&lt;br&gt;• Полноценный ПК в портативном корпусе&lt;br&gt;• Применение: работа на выездах" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8fafc;fontColor=#0f172a;align=left;spacingLeft=8;strokeColor=#cbd5e1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="430" width="260" height="60" as="geometry" />
         </mxCell>
         
-        <mxCell id="arrow3" value="Книга" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#3B82F6;" edge="1" parent="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="460" y="380" as="sourcePoint" />
-            <mxPoint x="460" y="420" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="mob_palm" value="Карманные устройства (Palmtops)&lt;br&gt;• Смартфоны-компьютеры, КПК, планшеты&lt;br&gt;• Применение: мобильный учет данных" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8fafc;fontColor=#0f172a;align=left;spacingLeft=8;strokeColor=#cbd5e1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="510" width="260" height="60" as="geometry" />
         </mxCell>
         
-        <mxCell id="arrow4" value="Читать" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#10B981;" edge="1" parent="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="460" y="500" as="sourcePoint" />
-            <mxPoint x="460" y="540" as="targetPoint" />
-          </mxGeometry>
+        <!-- БЛОК 3: ПОКОЛЕНИЯ ЭВМ -->
+        <mxCell id="gen_root" value="Поколения ЭВМ" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#374151;fontColor=#ffffff;strokeColor=none;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="460" y="620" width="280" height="50" as="geometry" />
         </mxCell>
         
-        <mxCell id="arrow5" value="Добавить" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#8B5CF6;" edge="1" parent="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="340" y="330" as="sourcePoint" />
-            <mxPoint x="260" y="420" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="g1" value="I поколение (до конца 1950-х)&lt;br&gt;• Элементная база: электронные лампы&lt;br&gt;• Низкая надежность, огромные габариты&lt;br&gt;• Пример: ЭНИАК (1946 г.)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8fafc;fontColor=#0f172a;align=left;spacingLeft=8;strokeColor=#cbd5e1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="700" width="410" height="70" as="geometry" />
         </mxCell>
         
-        <mxCell id="arrow6" value="Настройки" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#6366F1;" edge="1" parent="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="520" y="330" as="sourcePoint" />
-            <mxPoint x="660" y="420" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="g2" value="II поколение (до середины 1960-х)&lt;br&gt;• Элементная база: полупроводниковые транзисторы&lt;br&gt;• Снижение веса, стоимости и энергопотребления&lt;br&gt;• Рост общей производительности" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8fafc;fontColor=#0f172a;align=left;spacingLeft=8;strokeColor=#cbd5e1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="700" width="410" height="70" as="geometry" />
         </mxCell>
         
-        <mxCell id="arrow7" value="Импорт" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#10B981;dashed=1;" edge="1" parent="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="260" y="480" as="sourcePoint" />
-            <mxPoint x="340" y="380" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="g3" value="III поколение (до начала 1970-х)&lt;br&gt;• Элементная база: интегральные схемы (ИС)&lt;br&gt;• Появление развитых ОС и мультипрограммирования&lt;br&gt;• Полная программная совместимость машин" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8fafc;fontColor=#0f172a;align=left;spacingLeft=8;strokeColor=#cbd5e1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="790" width="410" height="70" as="geometry" />
         </mxCell>
         
-        <!-- Стрелки "Назад" -->
-        <mxCell id="arrow8" value="Назад" style="endArrow=classic;html=1;rounded=0;strokeWidth=1;strokeColor=#6B7280;dashed=1;" edge="1" parent="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="340" y="460" as="sourcePoint" />
-            <mxPoint x="460" y="380" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="g4" value="IV поколение (с 1971 г. по н.в.)&lt;br&gt;• Элементная база: большие интегральные схемы (БИС)&lt;br&gt;• Изобретение микропроцессора, развитие СУБД и сетей&lt;br&gt;• Многопроцессорные и многомашинные комплексы" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8fafc;fontColor=#0f172a;align=left;spacingLeft=8;strokeColor=#cbd5e1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="790" width="410" height="70" as="geometry" />
         </mxCell>
         
-        <mxCell id="arrow9" value="Назад" style="endArrow=classic;html=1;rounded=0;strokeWidth=1;strokeColor=#6B7280;dashed=1;" edge="1" parent="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="460" y="620" as="sourcePoint" />
-            <mxPoint x="460" y="500" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
+        <!-- ЛИНИИ СВЯЗИ -->
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;strokeColor=#94a3b8;" edge="1" parent="1" source="m_root" target="c_main" />
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0;exitY=0.5;entryX=0.5;entryY=0;strokeColor=#94a3b8;" edge="1" parent="1" source="m_root" target="c_micro" />
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;entryX=0.5;entryY=0;strokeColor=#94a3b8;" edge="1" parent="1" source="m_root" target="c_super" />
         
-        <mxCell id="arrow10" value="Назад" style="endArrow=classic;html=1;rounded=0;strokeWidth=1;strokeColor=#6B7280;dashed=1;" edge="1" parent="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="660" y="480" as="sourcePoint" />
-            <mxPoint x="520" y="380" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.25;exitY=1;entryX=0.5;entryY=0;strokeColor=#94a3b8;" edge="1" parent="1" source="pc_root" target="pc_static" />
+        <mxCell id="e5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.75;exitY=1;entryX=0.5;entryY=0;strokeColor=#94a3b8;" edge="1" parent="1" source="pc_root" target="pc_mobile" />
         
-        <!-- Легенда -->
-        <mxCell id="legend" value="Легенда" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#6B7280;fillColor=#F9FAFB;" vertex="1" parent="1">
-          <mxGeometry x="700" y="100" width="200" height="200" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="legend_title" value="Легенда" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingTop=0;spacingLeft=4;spacingRight=4;rotatable=0;labelBackgroundColor=none;fontSize=14;fontStyle=1" vertex="1" parent="legend">
-          <mxGeometry y="10" width="200" height="30" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="legend1" value="" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#4F46E5;fillColor=#EEF2FF;" vertex="1" parent="legend">
-          <mxGeometry x="30" y="50" width="20" height="20" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="legend1_text" value="Начало/Конец" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=5;fontSize=12;" vertex="1" parent="legend">
-          <mxGeometry x="60" y="50" width="120" height="20" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="legend2" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#3B82F6;fillColor=#DBEAFE;" vertex="1" parent="legend">
-          <mxGeometry x="30" y="80" width="20" height="20" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="legend2_text" value="Экран" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=5;fontSize=12;" vertex="1" parent="legend">
-          <mxGeometry x="60" y="80" width="120" height="20" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="legend3" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#4F46E5;" edge="1" parent="legend">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="30" y="110" as="sourcePoint" />
-            <mxPoint x="50" y="110" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        
-        <mxCell id="legend3_text" value="Основной путь" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=5;fontSize=12;" vertex="1" parent="legend">
-          <mxGeometry x="60" y="110" width="120" height="20" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="legend4" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=1;strokeColor=#6B7280;dashed=1;" edge="1" parent="legend">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="30" y="140" as="sourcePoint" />
-            <mxPoint x="50" y="140" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        
-        <mxCell id="legend4_text" value="Назад/Отмена" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=5;fontSize=12;" vertex="1" parent="legend">
-          <mxGeometry x="60" y="140" width="120" height="20" as="geometry" />
-        </mxCell>
-        
+        <mxCell id="e6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;strokeColor=#cbd5e1;" edge="1" parent="1" source="pc_static" target="st_base" />
+        <mxCell id="e7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;strokeColor=#cbd5e1;" edge="1" parent="1" source="pc_static" target="st_spec" />
+        <mxCell id="e8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;strokeColor=#cbd5e1;" edge="1" parent="1" source="pc_mobile" target="mob_lap" />
+        <mxCell id="e9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;strokeColor=#cbd5e1;" edge="1" parent="1" source="pc_mobile" target="mob_palm" />
       </root>
     </mxGraphModel>
   </diagram>
