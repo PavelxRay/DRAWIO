@@ -1,0 +1,147 @@
+<svg xmlns="http://w3.org" viewBox="0 0 1200 950" width="100%" height="100%">
+  <defs>
+    <!-- Градиенты для блоков -->
+    <linearGradient id="uiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#1D4ED8"/>
+    </linearGradient>
+    <linearGradient id="actionGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EF4444"/>
+      <stop offset="100%" stop-color="#DC2626"/>
+    </linearGradient>
+    <linearGradient id="ngrxGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#6D28D9"/>
+    </linearGradient>
+    <linearGradient id="apiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="widgetGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06B6D4"/>
+      <stop offset="100%" stop-color="#0891B2"/>
+    </linearGradient>
+
+    <!-- Стили маркеров стрелок -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#64748B"/>
+    </marker>
+  </defs>
+
+  <!-- Фон -->
+  <rect width="100%" height="100%" fill="#F8FAFC"/>
+
+  <!-- Сетка / Направляющие (опционально для красоты) -->
+  <g stroke="#E2E8F0" stroke-width="1">
+    <line x1="600" y1="0" x2="600" y2="950" stroke-dasharray="5,5"/>
+  </g>
+
+  <!-- ТЕКСТОВЫЕ МЕТКИ НА СВЯЗЯХ -->
+  <g font-family="Segoe UI, system-ui, sans-serif" font-size="12" font-weight="600" fill="#64748B" text-anchor="middle">
+    <text x="600" y="115">Инициирование целевого экономического действия</text>
+    <text x="320" y="270">Асинхронный HTTP-запрос</text>
+    <text x="880" y="270">Чистая функция мутации</text>
+    <text x="320" y="470">JSON Response: Success</text>
+    <text x="880" y="670">Мелкозернистые селекторы</text>
+  </g>
+
+  <!-- СВЯЗИ / СТРЕЛКИ -->
+  <g stroke="#94A3B8" stroke-width="2" fill="none" marker-end="url(#arrow)">
+    <!-- UI -> Dispatch Action -->
+    <path d="M 600,75 L 600,132"/>
+    
+    <!-- Dispatch Action разветвление -->
+    <path d="M 600,195 L 600,215 L 320,215 L 320,290"/>
+    <path d="M 600,215 L 880,215 L 880,290"/>
+
+    <!-- NgRx Effects -> Backend API -->
+    <path d="M 320,350 L 320,390"/>
+
+    <!-- NgRx Reducer -> State Tree -->
+    <path d="M 880,350 L 880,390"/>
+
+    <!-- Backend API -> Dispatch Success -> Reducer / Store -->
+    <path d="M 320,450 L 320,490"/>
+    <path d="M 320,550 L 880,550 L 880,452"/> 
+
+    <!-- State Tree -> NgRx Store -->
+    <path d="M 880,450 L 880,588"/>
+
+    <!-- NgRx Store -> RxJS Selectors -->
+    <path d="M 880,650 L 880,700"/>
+
+    <!-- Селекторы разветвление к виджетам -->
+    <path d="M 880,760 L 880,790 L 220,790 L 220,838"/>
+    <path d="M 880,790 L 600,790 L 600,838"/>
+    <path d="M 880,790 L 980,790 L 980,838"/>
+  </g>
+
+  <!-- СЛОЙ БЛОКОВ (КОМПОНЕНТОВ) -->
+  <g font-family="Segoe UI, system-ui, sans-serif" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">
+    
+    <!-- Уровень инициализации (UI & Action) -->
+    <g transform="translate(420, 20)">
+      <rect width="360" height="55" rx="8" fill="url(#uiGrad)" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.05))"/>
+      <text x="180" y="33">[Пользовательский интерфейс]</text>
+    </g>
+
+    <g transform="translate(400, 140)">
+      <rect width="400" height="55" rx="8" fill="url(#actionGrad)" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.05))"/>
+      <text x="200" y="33">[Dispatch Action] ➔ (UserTransactionTriggered)</text>
+    </g>
+
+    <!-- Левая ветка: Эффекты и API -->
+    <g transform="translate(120, 295)">
+      <rect width="400" height="55" rx="8" fill="url(#ngrxGrad)"/>
+      <text x="200" y="33">[NgRx Effects Subsystem]</text>
+    </g>
+
+    <g transform="translate(120, 395)">
+      <rect width="400" height="55" rx="8" fill="url(#apiGrad)"/>
+      <text x="200" y="33">[Распределенный Backend API]</text>
+    </g>
+
+    <g transform="translate(120, 495)">
+      <rect width="400" height="55" rx="8" fill="url(#actionGrad)"/>
+      <text x="200" y="33">[Dispatch Success Action]</text>
+    </g>
+
+    <!-- Правая ветка: Редьюсер и Хранилище -->
+    <g transform="translate(680, 295)">
+      <rect width="400" height="55" rx="8" fill="url(#ngrxGrad)"/>
+      <text x="200" y="33">[NgRx Reducer Function]</text>
+    </g>
+
+    <g transform="translate(680, 395)">
+      <rect width="400" height="55" rx="8" fill="url(#ngrxGrad)"/>
+      <text x="200" y="33">[Модификация State Tree]</text>
+    </g>
+
+    <g transform="translate(680, 595)">
+      <rect width="400" height="55" rx="8" fill="url(#ngrxGrad)"/>
+      <text x="200" y="33">[Обновленный NgRx Store]</text>
+    </g>
+
+    <!-- Селекторы RxJS -->
+    <g transform="translate(650, 705)">
+      <rect width="460" height="55" rx="8" fill="url(#ngrxGrad)"/>
+      <text x="230" y="33">[RxJS Stream Pipe selectors]</text>
+    </g>
+
+    <!-- Нижний уровень: Потребители данных (Виджеты) -->
+    <g transform="translate(40, 840)">
+      <rect width="360" height="60" rx="6" fill="url(#widgetGrad)"/>
+      <text x="180" y="35">[Виджет баланса бонусов]</text>
+    </g>
+
+    <g transform="translate(420, 840)">
+      <rect width="360" height="60" rx="6" fill="url(#widgetGrad)"/>
+      <text x="180" y="35">[Индикатор статуса лояльности]</text>
+    </g>
+
+    <g transform="translate(800, 840)">
+      <rect width="360" height="60" rx="6" fill="url(#widgetGrad)"/>
+      <text x="180" y="35">[Лента активности (Feed)]</text>
+    </g>
+  </g>
+</svg>
