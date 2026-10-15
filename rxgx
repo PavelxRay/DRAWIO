@@ -1,147 +1,158 @@
-<svg xmlns="http://w3.org" viewBox="0 0 1200 950" width="100%" height="100%">
-  <defs>
-    <!-- Градиенты для блоков -->
-    <linearGradient id="uiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#2563EB"/>
-      <stop offset="100%" stop-color="#1D4ED8"/>
-    </linearGradient>
-    <linearGradient id="actionGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#EF4444"/>
-      <stop offset="100%" stop-color="#DC2626"/>
-    </linearGradient>
-    <linearGradient id="ngrxGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#7C3AED"/>
-      <stop offset="100%" stop-color="#6D28D9"/>
-    </linearGradient>
-    <linearGradient id="apiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#10B981"/>
-      <stop offset="100%" stop-color="#059669"/>
-    </linearGradient>
-    <linearGradient id="widgetGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#06B6D4"/>
-      <stop offset="100%" stop-color="#0891B2"/>
-    </linearGradient>
+<mxfile host="app.diagrams.net">
+  <diagram id="ngrx-architecture" name="Архитектура NgRx">
+    <mxGraphModel dx="1422" dy="1342" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="950" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Заголовок -->
+        <mxCell id="2" value="&lt;b&gt;Архитектурный поток данных NgRx&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="450" y="20" width="300" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- 1. Пользовательский интерфейс -->
+        <mxCell id="3" value="[Пользовательский интерфейс]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="420" y="70" width="360" height="55" as="geometry" />
+        </mxCell>
+        
+        <!-- 2. Dispatch Action -->
+        <mxCell id="4" value="[Dispatch Action] ➔ (UserTransactionTriggered)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="170" width="400" height="55" as="geometry" />
+        </mxCell>
+        
+        <!-- 3. NgRx Effects Subsystem -->
+        <mxCell id="5" value="[NgRx Effects Subsystem]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#b85450;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="120" y="300" width="400" height="55" as="geometry" />
+        </mxCell>
+        
+        <!-- 4. Распределенный Backend API -->
+        <mxCell id="6" value="[Распределенный Backend API]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="120" y="400" width="400" height="55" as="geometry" />
+        </mxCell>
 
-    <!-- Стили маркеров стрелок -->
-    <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#64748B"/>
-    </marker>
-  </defs>
-
-  <!-- Фон -->
-  <rect width="100%" height="100%" fill="#F8FAFC"/>
-
-  <!-- Сетка / Направляющие (опционально для красоты) -->
-  <g stroke="#E2E8F0" stroke-width="1">
-    <line x1="600" y1="0" x2="600" y2="950" stroke-dasharray="5,5"/>
-  </g>
-
-  <!-- ТЕКСТОВЫЕ МЕТКИ НА СВЯЗЯХ -->
-  <g font-family="Segoe UI, system-ui, sans-serif" font-size="12" font-weight="600" fill="#64748B" text-anchor="middle">
-    <text x="600" y="115">Инициирование целевого экономического действия</text>
-    <text x="320" y="270">Асинхронный HTTP-запрос</text>
-    <text x="880" y="270">Чистая функция мутации</text>
-    <text x="320" y="470">JSON Response: Success</text>
-    <text x="880" y="670">Мелкозернистые селекторы</text>
-  </g>
-
-  <!-- СВЯЗИ / СТРЕЛКИ -->
-  <g stroke="#94A3B8" stroke-width="2" fill="none" marker-end="url(#arrow)">
-    <!-- UI -> Dispatch Action -->
-    <path d="M 600,75 L 600,132"/>
-    
-    <!-- Dispatch Action разветвление -->
-    <path d="M 600,195 L 600,215 L 320,215 L 320,290"/>
-    <path d="M 600,215 L 880,215 L 880,290"/>
-
-    <!-- NgRx Effects -> Backend API -->
-    <path d="M 320,350 L 320,390"/>
-
-    <!-- NgRx Reducer -> State Tree -->
-    <path d="M 880,350 L 880,390"/>
-
-    <!-- Backend API -> Dispatch Success -> Reducer / Store -->
-    <path d="M 320,450 L 320,490"/>
-    <path d="M 320,550 L 880,550 L 880,452"/> 
-
-    <!-- State Tree -> NgRx Store -->
-    <path d="M 880,450 L 880,588"/>
-
-    <!-- NgRx Store -> RxJS Selectors -->
-    <path d="M 880,650 L 880,700"/>
-
-    <!-- Селекторы разветвление к виджетам -->
-    <path d="M 880,760 L 880,790 L 220,790 L 220,838"/>
-    <path d="M 880,790 L 600,790 L 600,838"/>
-    <path d="M 880,790 L 980,790 L 980,838"/>
-  </g>
-
-  <!-- СЛОЙ БЛОКОВ (КОМПОНЕНТОВ) -->
-  <g font-family="Segoe UI, system-ui, sans-serif" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">
-    
-    <!-- Уровень инициализации (UI & Action) -->
-    <g transform="translate(420, 20)">
-      <rect width="360" height="55" rx="8" fill="url(#uiGrad)" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.05))"/>
-      <text x="180" y="33">[Пользовательский интерфейс]</text>
-    </g>
-
-    <g transform="translate(400, 140)">
-      <rect width="400" height="55" rx="8" fill="url(#actionGrad)" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.05))"/>
-      <text x="200" y="33">[Dispatch Action] ➔ (UserTransactionTriggered)</text>
-    </g>
-
-    <!-- Левая ветка: Эффекты и API -->
-    <g transform="translate(120, 295)">
-      <rect width="400" height="55" rx="8" fill="url(#ngrxGrad)"/>
-      <text x="200" y="33">[NgRx Effects Subsystem]</text>
-    </g>
-
-    <g transform="translate(120, 395)">
-      <rect width="400" height="55" rx="8" fill="url(#apiGrad)"/>
-      <text x="200" y="33">[Распределенный Backend API]</text>
-    </g>
-
-    <g transform="translate(120, 495)">
-      <rect width="400" height="55" rx="8" fill="url(#actionGrad)"/>
-      <text x="200" y="33">[Dispatch Success Action]</text>
-    </g>
-
-    <!-- Правая ветка: Редьюсер и Хранилище -->
-    <g transform="translate(680, 295)">
-      <rect width="400" height="55" rx="8" fill="url(#ngrxGrad)"/>
-      <text x="200" y="33">[NgRx Reducer Function]</text>
-    </g>
-
-    <g transform="translate(680, 395)">
-      <rect width="400" height="55" rx="8" fill="url(#ngrxGrad)"/>
-      <text x="200" y="33">[Модификация State Tree]</text>
-    </g>
-
-    <g transform="translate(680, 595)">
-      <rect width="400" height="55" rx="8" fill="url(#ngrxGrad)"/>
-      <text x="200" y="33">[Обновленный NgRx Store]</text>
-    </g>
-
-    <!-- Селекторы RxJS -->
-    <g transform="translate(650, 705)">
-      <rect width="460" height="55" rx="8" fill="url(#ngrxGrad)"/>
-      <text x="230" y="33">[RxJS Stream Pipe selectors]</text>
-    </g>
-
-    <!-- Нижний уровень: Потребители данных (Виджеты) -->
-    <g transform="translate(40, 840)">
-      <rect width="360" height="60" rx="6" fill="url(#widgetGrad)"/>
-      <text x="180" y="35">[Виджет баланса бонусов]</text>
-    </g>
-
-    <g transform="translate(420, 840)">
-      <rect width="360" height="60" rx="6" fill="url(#widgetGrad)"/>
-      <text x="180" y="35">[Индикатор статуса лояльности]</text>
-    </g>
-
-    <g transform="translate(800, 840)">
-      <rect width="360" height="60" rx="6" fill="url(#widgetGrad)"/>
-      <text x="180" y="35">[Лента активности (Feed)]</text>
-    </g>
-  </g>
-</svg>
+        <!-- 5. Dispatch Success Action -->
+        <mxCell id="7" value="[Dispatch Success Action]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="120" y="500" width="400" height="55" as="geometry" />
+        </mxCell>
+        
+        <!-- 6. NgRx Reducer Function -->
+        <mxCell id="8" value="[NgRx Reducer Function]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="680" y="300" width="400" height="55" as="geometry" />
+        </mxCell>
+        
+        <!-- 7. Модификация State Tree -->
+        <mxCell id="9" value="[Модификация State Tree]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="680" y="400" width="400" height="55" as="geometry" />
+        </mxCell>
+        
+        <!-- 8. Обновленный NgRx Store -->
+        <mxCell id="10" value="[Обновленный NgRx Store]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="680" y="600" width="400" height="55" as="geometry" />
+        </mxCell>
+        
+        <!-- 9. RxJS Stream Pipe selectors -->
+        <mxCell id="11" value="[RxJS Stream Pipe selectors]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="650" y="710" width="460" height="55" as="geometry" />
+        </mxCell>
+        
+        <!-- 10. Виджет баланса бонусов -->
+        <mxCell id="12" value="[Виджет баланса бонусов]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cce5ff;strokeColor=#66b2ff;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="40" y="840" width="360" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- 11. Индикатор статуса лояльности -->
+        <mxCell id="13" value="[Индикатор статуса лояльности]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cce5ff;strokeColor=#66b2ff;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="420" y="840" width="360" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- 12. Лента активности (Feed) -->
+        <mxCell id="14" value="[Лента активности (Feed)]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cce5ff;strokeColor=#66b2ff;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="800" y="840" width="360" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- СТРЕЛКИ И СВЯЗИ -->
+        
+        <!-- UI ➔ Dispatch Action -->
+        <mxCell id="15" value="Инициирование целевого экономического действия" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=11;" edge="1" parent="1" source="3" target="4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Dispatch Action ➔ Effects -->
+        <mxCell id="16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="4" target="5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="600" y="250" />
+              <mxPoint x="320" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Dispatch Action ➔ Reducer -->
+        <mxCell id="17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="4" target="8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="600" y="250" />
+              <mxPoint x="880" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Effects ➔ Backend API -->
+        <mxCell id="18" value="Асинхронный HTTP-запрос" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=11;" edge="1" parent="1" source="5" target="6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Backend API ➔ Dispatch Success Action -->
+        <mxCell id="19" value="JSON Response: Success" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=11;" edge="1" parent="1" source="6" target="7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Reducer ➔ State Tree -->
+        <mxCell id="20" value="Чистая функция мутации" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=11;" edge="1" parent="1" source="8" target="9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Dispatch Success Action ➔ Reducer / Store -->
+        <mxCell id="21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="7" target="10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="320" y="570" />
+              <mxPoint x="640" y="570" />
+              <mxPoint x="640" y="628" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- State Tree ➔ Store -->
+        <mxCell id="22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="9" target="10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Store ➔ Selectors -->
+        <mxCell id="23" value="Мелкозернистые селекторы" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=11;" edge="1" parent="1" source="10" target="11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Selectors ➔ Виджет 1 -->
+        <mxCell id="24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="11" target="12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="880" y="790" />
+              <mxPoint x="220" y="790" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Selectors ➔ Виджет 2 -->
+        <mxCell id="25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="11" target="13">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="880" y="790" />
+              <mxPoint x="600" y="790" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Selectors ➔ Виджет 3 -->
+        <mxCell id="26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="11" target="14">
+          <mxGeometry relative="1" as="geometry">
